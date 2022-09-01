@@ -11,5 +11,12 @@ export class CartService {
     this.items.push(product);
   }
 
+  getItems(){return this.items;}
+
+  clearCart(){
+    this.items=[];
+    return this.items;
+  }
+
   constructor() { }
 }
